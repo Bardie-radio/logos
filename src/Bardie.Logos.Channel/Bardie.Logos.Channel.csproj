@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Bardie.Logos.Channel</RootNamespace>
+    <AssemblyName>Bardie.Logos.Channel</AssemblyName>
+    <IsPackable>true</IsPackable>
+    <PackageId>Bardie.Logos.Channel</PackageId>
+    <Version>0.1.0</Version>
+    <Description>mTLS, module manifest, and gRPC channel helpers for Bardie module mesh (host + participant).</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" />
+    <PackageReference Include="Grpc.Net.Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bardie.Logos.Contracts\Bardie.Logos.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
