@@ -5,7 +5,6 @@
     <AssemblyName>Bardie.Logos.Channel</AssemblyName>
     <IsPackable>true</IsPackable>
     <PackageId>Bardie.Logos.Channel</PackageId>
-    <Version>0.1.0</Version>
     <Description>mTLS, module manifest, and gRPC channel helpers for Bardie module mesh (host + participant).</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

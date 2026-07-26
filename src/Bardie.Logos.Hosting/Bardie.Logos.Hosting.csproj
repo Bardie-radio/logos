@@ -5,7 +5,6 @@
     <AssemblyName>Bardie.Logos.Hosting</AssemblyName>
     <IsPackable>true</IsPackable>
     <PackageId>Bardie.Logos.Hosting</PackageId>
-    <Version>0.1.0</Version>
     <Description>ASP.NET Core bootstrap kit for Bardie module participants (Compose env aliases, Kestrel ports, health endpoints, OTel).</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

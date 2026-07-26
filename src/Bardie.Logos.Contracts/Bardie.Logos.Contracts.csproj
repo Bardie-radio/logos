@@ -5,7 +5,6 @@
     <AssemblyName>Bardie.Logos.Contracts</AssemblyName>
     <IsPackable>true</IsPackable>
     <PackageId>Bardie.Logos.Contracts</PackageId>
-    <Version>0.1.0</Version>
     <Description>Versioned gRPC contract package for Bardie module authors (ModuleRegistry, AuthAdapter, SourceModule, BlobStorage, Library).</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

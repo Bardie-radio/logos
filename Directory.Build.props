@@ -5,5 +5,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+
+    <!-- One version for all Bardie.Logos.* packages in this repo (lockstep). -->
+    <Version>0.1.0</Version>
+
+    <Authors>Bardie</Authors>
+    <Company>Bardie-radio</Company>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Bardie-radio/logos</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Bardie-radio/logos</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="\" Condition="Exists('$(MSBuildThisFileDirectory)LICENSE')" />
+  </ItemGroup>
 </Project>
