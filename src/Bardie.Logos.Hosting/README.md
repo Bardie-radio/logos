@@ -24,4 +24,4 @@ app.MapModuleHostingEndpoints();
 | `EnsureModuleParticipantServerCertificateAsync` | Work-port server cert before listen |
 | `MapModuleHostingEndpoints` | `/healthz` + `/` identity JSON |
 
-Pack: `dotnet pack libs/Bardie.Logos.Hosting/Bardie.Logos.Hosting.csproj -c Release`
+Pack: `dotnet pack src/Bardie.Logos.Hosting/Bardie.Logos.Hosting.csproj -c Release`

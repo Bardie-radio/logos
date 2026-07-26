@@ -6,11 +6,11 @@ Versioned **gRPC contract package** for Bardie module authors. Single source of 
 
 | Proto | Namespace | Docs |
 |-------|-----------|------|
-| `Protos/module_registry.proto` | `Bardie.Modules.V1` | [grpc-module-registry](../../docs/architecture/interfaces/grpc-module-registry.md) |
-| `Protos/auth_adapter.proto` | `Bardie.Auth.V1` | [grpc-auth-adapter](../../docs/architecture/interfaces/grpc-auth-adapter.md) |
-| `Protos/source_module.proto` | `Bardie.Source.V1` | [grpc-source-module](../../docs/architecture/interfaces/grpc-source-module.md) |
-| `Protos/blob_storage.proto` | `Bardie.Storage.V1` | [grpc-blob-storage](../../docs/architecture/interfaces/grpc-blob-storage.md) |
-| `Protos/library.proto` | `Bardie.Library.V1` | [grpc-library](../../docs/architecture/interfaces/grpc-library.md) |
+| `Protos/module_registry.proto` | `Bardie.Modules.V1` | [grpc-module-registry](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-module-registry.md) |
+| `Protos/auth_adapter.proto` | `Bardie.Auth.V1` | [grpc-auth-adapter](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-auth-adapter.md) |
+| `Protos/source_module.proto` | `Bardie.Source.V1` | [grpc-source-module](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-source-module.md) |
+| `Protos/blob_storage.proto` | `Bardie.Storage.V1` | [grpc-blob-storage](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-blob-storage.md) |
+| `Protos/library.proto` | `Bardie.Library.V1` | [grpc-library](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-library.md) |
 
 C# stubs are generated with `GrpcServices=Both` (client + server). `.proto` files are also packed under `protos/` for non-C# generators.
 
@@ -18,9 +18,10 @@ C# stubs are generated with `GrpcServices=Both` (client + server). `.proto` file
 
 ## Consume
 
-| Context | How |
-|---------|-----|
-| Multi-root / sibling `kithara/libs` | `ProjectReference` to this project (Bes uses `Directory.Build.props` when `../kithara/libs` exists) |
-| Standalone CI / published consumers | `PackageReference` to `Bardie.Logos.Contracts` `0.1.0` |
+`PackageReference` to nuget.org `Bardie.Logos.Contracts` (pin version in `Directory.Packages.props`).
 
-Pack with Channel: `dotnet pack libs/Bardie.Logos.Contracts/Bardie.Logos.Contracts.csproj libs/Bardie.Logos.Channel/Bardie.Logos.Channel.csproj -c Release`.
+```xml
+<PackageReference Include="Bardie.Logos.Contracts" />
+```
+
+`.proto` files are packed under `protos/` for non-C# generators. Do not copy protos into consumer repos.

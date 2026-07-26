@@ -21,12 +21,7 @@ Depends on [`Bardie.Logos.Contracts`](../Bardie.Logos.Contracts/README.md) for `
 
 ## Consume
 
-| Context | How |
-|---------|-----|
-| Multi-root / sibling `kithara/libs` | `ProjectReference` to this project (see Bes `Directory.Build.props`) |
-| Standalone CI / published consumers | `PackageReference` to `Bardie.Logos.Channel` `0.1.0` |
-
-Pack: `dotnet pack libs/Bardie.Logos.Channel/Bardie.Logos.Channel.csproj -c Release` (with Contracts).
+`PackageReference` to nuget.org `Bardie.Logos.Channel` (and `Bardie.Logos.Contracts` transitively / via CPM).
 
 ## Host DI
 
@@ -111,8 +106,8 @@ Offline provision helper: `IModuleCertificateIssuer.ProvisionPresharedClientCert
 ## Related
 
 - Participant Program bootstrap + Bardie Compose env: [`Bardie.Logos.Hosting`](../Bardie.Logos.Hosting/README.md)
-- JWT-minting auth adapters: [`Bardie.Module.Auth`](../Bardie.Module.Auth/README.md)
-- Architecture: [module-channel.md](../../docs/architecture/operations/module-channel.md)
-- Registry contract: [grpc-module-registry.md](../../docs/architecture/interfaces/grpc-module-registry.md)
-- Config knobs: [configuration.md](../../docs/architecture/operations/configuration.md)
-- Mesh trust audit: [security-audit-module-mesh.md](../../docs/architecture/operations/security-audit-module-mesh.md)
+- JWT-minting auth adapters: [`Bardie.Module.Auth`](https://github.com/Bardie-radio/kithara-logos-auth)
+- Architecture: [module-channel.md](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/operations/module-channel.md)
+- Registry contract: [grpc-module-registry.md](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/interfaces/grpc-module-registry.md)
+- Config knobs: [configuration.md](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/operations/configuration.md)
+- Mesh trust audit: [security-audit-module-mesh.md](https://github.com/Bardie-radio/kithara/blob/main/docs/architecture/operations/security-audit-module-mesh.md)
